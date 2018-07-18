@@ -4,7 +4,7 @@ module EIP55
   class Util
     class << self
       def encode_hex string
-        string.unpack("H*").first
+        string.unpack1("H*")
       end
 
       def keccak256 buffer

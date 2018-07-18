@@ -18,7 +18,7 @@ module EIP55
       raise "Invalid address: #{address}" unless matches_any_format?
 
       cased = unprefixed.chars.zip(checksum.chars).map do |char, check|
-        check =~ /[0-7]/ ? char.downcase : char.upcase
+        check.match?(/[0-7]/) ? char.downcase : char.upcase
       end
 
       Util.prefix(cased.join)
