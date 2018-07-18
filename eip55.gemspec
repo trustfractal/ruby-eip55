@@ -6,6 +6,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Implementation of the EIP55 checksum address encoding"
 
+  spec.add_dependency "digest-sha3"
   spec.add_development_dependency "minitest"
   spec.add_development_dependency "minitest-reporters"
   spec.add_development_dependency "rubocop"

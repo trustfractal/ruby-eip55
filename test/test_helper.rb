@@ -5,4 +5,4 @@ require "eip55/util"
 require "eip55/address"
 require "securerandom"
 
-Minitest::Reporters.use!
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new

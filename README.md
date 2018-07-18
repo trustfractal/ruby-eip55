@@ -1,4 +1,4 @@
-# EIP55
+# EIP55 [![CircleCI](https://circleci.com/gh/FractalBlockchain/ruby-eip55.svg?style=svg)](https://circleci.com/gh/FractalBlockchain/ruby-eip55)
 
 A library for [Ethereum mixed-case checksum address encoding](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md). Mostly extracted from [se3000/ruby-eth](https://github.com/se3000/ruby-eth).
 
