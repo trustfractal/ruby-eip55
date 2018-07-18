@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself:
 
-    $ gem install eth
+    $ gem install eip55
 
 ## Usage
 
