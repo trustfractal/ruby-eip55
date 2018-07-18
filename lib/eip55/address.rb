@@ -1,4 +1,7 @@
 module EIP55
+  class InvalidAddressError < StandardError
+  end
+
   class Address
     def initialize address
       @address = Util.prefix(address)
@@ -15,7 +18,7 @@ module EIP55
     end
 
     def checksummed
-      raise "Invalid address: #{address}" unless matches_any_format?
+      raise InvalidAddressError.new("Invalid address: #{address}") unless matches_any_format?
 
       cased = unprefixed.chars.zip(checksum.chars).map do |char, check|
         check.match?(/[0-7]/) ? char.downcase : char.upcase

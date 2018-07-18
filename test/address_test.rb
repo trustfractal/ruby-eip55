@@ -123,7 +123,7 @@ describe EIP55::Address do
       let(:bad) { "0x#{SecureRandom.hex(21)[0..40]}" }
 
       it "raises an error" do
-        assert_raises "Invalid address: #{bad}" do
+        assert_raises EIP55::InvalidAddressError do
           EIP55::Address.new(bad).checksummed
         end
       end
