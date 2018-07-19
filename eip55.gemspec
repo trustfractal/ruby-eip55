@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.name = "eip55"
   spec.version = EIP55::VERSION
 
-  spec.authors = ["Mário Carneiro"]
-  spec.email = ["mario.carneiro@frctls.com"]
+  spec.authors = ["Steve Ellis", "Mário Carneiro"]
+  spec.email = ["email@steveell.is", "mario.carneiro@frctls.com"]
 
   spec.summary = "Implementation of the EIP55 checksum address encoding"
   spec.license = "MIT"
