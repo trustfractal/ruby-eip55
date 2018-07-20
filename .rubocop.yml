@@ -1,0 +1,77 @@
+AllCops:
+  Exclude:
+    - "db/**/*"
+    - "node_modules/**/*"
+    - "bin/*"
+    - "config/**/*"
+    - "config.ru"
+    - "Rakefile"
+    - "vendor/**/*"
+  TargetRubyVersion: 2.5
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/IndentArray:
+  EnforcedStyle: consistent
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+# These were too much to fix / couldn't decide
+Metrics:
+  Enabled: false
+
+Style/RaiseArgs:
+  Enabled: false
+
+Style/MethodDefParentheses:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# These I don't care
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/StructInheritance:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/SpecialGlobalVars:
+  EnforcedStyle: use_perl_names
+
+Lint/UnusedMethodArgument:
+  AllowUnusedKeywordArguments: true
+  Include:
+  - test/support/**/*.rb
