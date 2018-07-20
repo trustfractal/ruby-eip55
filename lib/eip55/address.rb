@@ -44,11 +44,11 @@ module EIP55
     end
 
     def all_uppercase?
-      address.match(/(?:0[xX])[A-F0-9]{40}/)
+      address.match(/\A(?:0[xX])[A-F0-9]{40}\z/)
     end
 
     def all_lowercase?
-      address.match(/(?:0[xX])[a-f0-9]{40}/)
+      address.match(/\A(?:0[xX])[a-f0-9]{40}\z/)
     end
 
     def unprefixed

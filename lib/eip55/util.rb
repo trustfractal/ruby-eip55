@@ -12,7 +12,7 @@ module EIP55
       end
 
       def prefix address
-        address.start_with?("0x") ? address : "0x#{address}"
+        address[0, 2] == "0x" ? address : "0x#{address}"
       end
 
       def unprefix address
